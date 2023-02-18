@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-
-<body>
-  <div class="form-center">
-    <form>
-      <label for="numFloors">Number of Floors.</label><br>
-      <input type="text" id="nnumFloors" name="numFloors"><br>
-      <label for="lname">Number of Lifts.</label><br>
-      <input type="text" id="numLifts" name="numLifts">
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-</body>
-
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="form" action="floors.html">
+        <h2>Enter the number of lifts and number of floors</h2>
+        <label for="num-lifts">Number of Lifts:</label>
+        <input type="number" id="num-lifts" name="num-lifts" placeholder="Enter the number of lifts" required>
+        <label for="num-floors">Number of Floors:</label>
+        <input type="number" id="num-floors" name="num-floors" placeholder="Enter the number of floors" required>
+        <div class="submit"><input type="submit" value="Submit"></div>
+      </form>
+    </div>
+  </body>
 </html>
+
